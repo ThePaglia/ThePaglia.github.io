@@ -35,12 +35,11 @@
                 <div class="header-title-row">
                     <h1>Martino Pagliarani</h1>
                     <div class="header-links" aria-label="Contact links">
-                        <a class="contact-link" href="mailto:martipaglia02@gmail.com" target="_blank"
-                            rel="noopener noreferrer" aria-label="Email">
+                        <button class="contact-link" aria-label="Email" onclick="copyToClipboard('martipaglia02@gmail.com')">
                             <svg color="red" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <path d="M12 13.5l-11-7.5v15h22v-15l-11 7.5zm0-2.5l11-7.5h-22l11 7.5z">
                             </svg>
-                        </a>
+                        </button>
 
                         <a class="contact-link" href="https://www.linkedin.com/in/martino-pagliarani-730486331/"
                             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
@@ -83,13 +82,12 @@
                 <section id="contact" class="content-section">
                     <h2>Contacts</h2>
                     <div class="contact-links">
-                        <a class="contact-link" href="mailto:martipaglia02@gmail.com" target="_blank"
-                            rel="noopener noreferrer" aria-label="Email">
+                        <button class="contact-link" aria-label="Email" onclick="copyToClipboard('martipaglia02@gmail.com')">
                             <svg color="red" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                                 <path d="M12 13.5l-11-7.5v15h22v-15l-11 7.5zm0-2.5l11-7.5h-22l11 7.5z">
                             </svg>
                             <span>martipaglia02@gmail.com</span>
-                        </a>
+                        </button>
 
                         <a class="contact-link" href="https://www.linkedin.com/in/martino-pagliarani-730486331/"
                             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
@@ -118,6 +116,7 @@
             </footer>
         </div>
     </div>
+    <div id="snackbar">Email copied to clipboard!</div>
 </body>
 
 </html>
