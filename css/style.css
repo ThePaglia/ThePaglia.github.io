@@ -336,9 +336,18 @@ body {
 }
 
 @media (max-width: 820px) {
+
+	html,
+	body {
+		overflow: auto;
+	}
+
+
 	.page-shell {
 		flex-direction: column;
-		height: 100vh;
+		height: auto;
+		min-height: 100vh;
+		overflow: visible;
 	}
 
 	.hero-banner {
