@@ -160,7 +160,10 @@ body {
 .carousel {
 	position: relative;
 	margin: 12px 0;
-	min-height: 150px;
+	aspect-ratio: 16 / 9;
+	overflow: hidden;
+	border-radius: 12px;
+	background: #000;
 }
 
 /* Next & previous buttons */
@@ -200,13 +203,19 @@ body {
 }
 
 .responsive-iframe {
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+	display: block;
+	width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	border: none;
+}
+
+.carousel .responsive-iframe {
+	position: absolute;
+	inset: 0;
 	width: 100%;
 	height: 100%;
-	border: none;
+	aspect-ratio: auto;
 }
 
 .contact-links {
