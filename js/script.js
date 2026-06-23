@@ -1,6 +1,5 @@
 // Email copy to clipboard functionality
 // Snackbar message display
-
 var snackbarHideTimeoutId = null;
 
 function copyToClipboard(text) {
