@@ -24,25 +24,49 @@ function showEmailCopiedMessage() {
 }
 
 // Carousel functionality
-let slideIndex = 1;
-showSlides(slideIndex);
+// Carousel functionality
 
-function plusSlides(n) {
-    showSlides(slideIndex += n);
+document.querySelectorAll(".carousel-container").forEach(initCarousel);
+
+function initCarousel(carousel) {
+    carousel.dataset.index = 0;
+    showSlides(carousel, 0);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function plusSlides(button, n) {
+    const carousel = button.closest(".carousel-container");
+    let index = Number(carousel.dataset.index);
+
+    showSlides(carousel, index + n);
 }
 
-function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("carousel");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
+function showSlides(carousel, index) {
+    const slides = carousel.querySelectorAll(".carousel-slide");
 
+    if (index >= slides.length) index = 0;
+    if (index < 0) index = slides.length - 1;
+
+    slides.forEach(slide => {
+        slide.style.display = "none";
+    });
+
+    slides[index].style.display = "block";
+    carousel.dataset.index = index;
 }
+// let slideIndex = 1;
+// showSlides(slideIndex);
+
+// function plusSlides(n) {
+//     showSlides(slideIndex += n);
+// }
+
+// function showSlides(n) {
+//     let i;
+//     let slides = document.getElementsByClassName("carousel-slide");
+//     if (n > slides.length) { slideIndex = 1 }
+//     if (n < 1) { slideIndex = slides.length }
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     slides[slideIndex - 1].style.display = "block";
+// }

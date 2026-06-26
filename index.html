@@ -106,25 +106,27 @@
                     <div class="project-rows">
                         <div class="project-column">
                             <h3>FitCheck!</h3>
-                            <div class="carousel">
-                                <iframe class="responsive-media" src="https://www.youtube.com/embed/wQ1y-wEPRas"
-                                    title="FitCheck! Gameplay"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <button class="carousel-prev" type="button" onclick="plusSlides(-1)"
-                                    aria-label="Previous project media">&#10094;</button>
-                                <button class="carousel-next" type="button" onclick="plusSlides(1)"
-                                    aria-label="Next project media">&#10095;</button>
-                            </div>
-                            <div class="carousel">
-                                <iframe class="responsive-media" src="https://www.youtube.com/embed/9DlfIbZ9EOo"
-                                    title="FitCheck! EndGame"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                <button class="carousel-prev" type="button" onclick="plusSlides(-1)"
-                                    aria-label="Previous project media">&#10094;</button>
-                                <button class="carousel-next" type="button" onclick="plusSlides(1)"
-                                    aria-label="Next project media">&#10095;</button>
+                            <div class="carousel-container">
+                                <div class="carousel-slide">
+                                    <iframe class="responsive-media" src="https://www.youtube.com/embed/wQ1y-wEPRas"
+                                        title="FitCheck! Gameplay"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <button class="carousel-prev" type="button" onclick="plusSlides(this, -1)"
+                                        aria-label="Previous project media">&#10094;</button>
+                                    <button class="carousel-next" type="button" onclick="plusSlides(this, 1)"
+                                        aria-label="Next project media">&#10095;</button>
+                                </div>
+                                <div class="carousel-slide">
+                                    <iframe class="responsive-media" src="https://www.youtube.com/embed/9DlfIbZ9EOo"
+                                        title="FitCheck! EndGame"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <button class="carousel-prev" type="button" onclick="plusSlides(this, -1)"
+                                        aria-label="Previous project media">&#10094;</button>
+                                    <button class="carousel-next" type="button" onclick="plusSlides(this, 1)"
+                                        aria-label="Next project media">&#10095;</button>
+                                </div>
                             </div>
                             <ul>
                                 <li>Tools: Unity, C#</li>
@@ -177,20 +179,33 @@
                             <p>Kitchen Gore is a physics-based horror cooking simulator.</p>
                         </div>
                         <div class="project-column">
-                            <h3>Planet ACG</h3>
+                            <h3>Procedural Planet with Volumetric Clouds and Atmosphere</h3>
                             <iframe class="responsive-media" src="https://www.youtube.com/embed/LwNbftrN8QU"
                                 title="Procedural Planet with Volumetric Clouds and Atmosphere Showcase"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <p>Short description of project 3. Highlight key features and technologies used.</p>
+                            <ul>
+                                <li>Tools: C++, GLSL</li>
+                                <li>Team: 2 people</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                            <p>A procedurally generated planet with realistic volumetric clouds and an atmospheric
+                                scattering system.</p>
                         </div>
                         <div class="project-column">
-                            <h3>Dungeon Master Simulator</h3>
+                            <h3>Dungeons and Chatbots</h3>
                             <iframe class="responsive-media" src="https://www.youtube.com/embed/1imfNe6lKvU"
                                 title="Dungeons and Chatbots  - Video Demo"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <p>Short description of project 3. Highlight key features and technologies used.</p>
+                            <ul>
+                                <li>Tools: Unity, C#</li>
+                                <li>Team: 4 people</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                            <p>Dungeons and Chatbots is a Dungeon Master simulator where the human player acts as the
+                                Dungeon Master and the AI
+                                chatbots roleplay in the campaign.</p>
                         </div>
                         <div class="project-column">
                             <h3>Tsug's Gambit</h3>
@@ -198,19 +213,39 @@
                                 title="Tsug&#39;s Gambit - Official Trailer"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <p>Short description of project 3. Highlight key features and technologies used.</p>
+                            <ul>
+                                <li>Tools: Unity, C#, Figma, Jira, Agile Framework</li>
+                                <li>Team: 7 people</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                            <p>Tsug's Gambit is a 3D turn-based dungeon crawler where players navigate a ruined dungeon,
+                                battling
+                                monsters using elemental dice powers.</p>
                         </div>
                         <div class="project-column">
-                            <h3>Doom-like game, custom Game Engine</h3>
-                            <img src="images/DoomShard.png" class="responsive-media"
-                                alt="Doom-like game Shard Game Engine project screenshot">
-                            <p>Lorem ipsum</p>
+                            <h3>Custom Game Engine</h3>
+                            <iframe class="responsive-media" src="https://www.youtube.com/embed/NVGfgzsTxnQ"
+                                title="Doom Type Game - Video Demo"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <ul>
+                                <li>Tools: C#</li>
+                                <li>Team: 4 people</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                            <p>A custom game engine for a Doom-inspired first-person shooter.</p>
                         </div>
                         <div class="project-column">
                             <h3>Master of the Entire World (MOTEW)</h3>
                             <img src="images/MOTEW.png" class="responsive-media"
                                 alt="Master of the Entire World (MOTEW) project screenshot">
-                            <p>Lorem ipsum</p>
+                            <ul>
+                                <li>Tools: Unity, C#, Agile Framework</li>
+                                <li>Team: 5 people</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                            <p>Master of the Entire World is a cozy–dystopia god game where you play as a deity
+                                controlling the fate of the small Humons.</p>
                         </div>
                         <div class="project-column">
                             <h3>Blender - Sailing boat in the ocean during sunset</h3>
@@ -218,7 +253,12 @@
                                 title="Blender - Sailing boat in the ocean during sunset"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            <p>Short description of project 3. Highlight key features and technologies used.</p>
+                            <ul>
+                                <li>Tools: Blender</li>
+                                <li>Team: 1 person</li>
+                                <li>Status: Completed</li>
+                            </ul>
+                            <p>Rendering of a sailing boat in the ocean during sunset.</p>
                         </div>
                     </div>
                     <!-- ADD when we have the link -->
