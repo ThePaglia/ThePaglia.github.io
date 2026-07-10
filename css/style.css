@@ -32,7 +32,7 @@ body {
 	flex: 0 0 min(10vw, 520px);
 	min-width: 180px;
 	background:
-		linear-gradient(270deg, #282828, #53CA61);
+		linear-gradient(270deg, #282828, #5361CA);
 	padding: 24px;
 	display: flex;
 }
