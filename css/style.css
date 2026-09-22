@@ -78,10 +78,19 @@ body {
 }
 
 .header-title-row {
-	display: flex;
-	align-items: center;
-	gap: 18px;
-	flex-wrap: wrap;
+	position: relative;
+	display: block;
+}
+
+.profile-picture-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.profile-picture {
+	width: 150px;
+	height: 150px;
 }
 
 .header-links {
@@ -388,5 +397,23 @@ hr {
 		float: left;
 		width: 100%;
 		padding: 10px;
+	}
+
+	.header-title-row {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		align-items: center;
+		gap: 18px;
+	}
+
+	.profile-picture-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.profile-picture {
+		width: 130px;
+		height: 130px;
 	}
 }
