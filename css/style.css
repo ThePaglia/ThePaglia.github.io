@@ -91,6 +91,7 @@ body {
 .profile-picture {
 	width: 150px;
 	height: 150px;
+	border-radius: 12px;
 }
 
 .header-links {
@@ -415,5 +416,6 @@ hr {
 	.profile-picture {
 		width: 130px;
 		height: 130px;
+		border-radius: 12px;
 	}
 }
